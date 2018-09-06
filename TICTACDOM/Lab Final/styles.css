@@ -1,0 +1,17 @@
+td{
+    border:10px solid rgb(184, 248, 9);
+    border-radius: 0.5px;
+    height: 150px;
+    width:150px;
+    text-align: center;
+    font-size: 100px; 
+}
+
+
+h1 {text-align: center}
+h1 {color : red}
+
+p {text-align: center}
+p {border-style: solid}
+p {border-color: dodgerBlue}
+    
