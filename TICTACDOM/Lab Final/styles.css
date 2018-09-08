@@ -1,17 +1,62 @@
-td{
-    border:10px solid rgb(184, 248, 9);
-    border-radius: 0.5px;
-    height: 150px;
-    width:150px;
+#board {
+    padding: 5em;
     text-align: center;
-    font-size: 100px; 
-}
-
-
-h1 {text-align: center}
-h1 {color : red}
-
-p {text-align: center}
-p {border-style: solid}
-p {border-color: dodgerBlue}
-    
+  }
+  
+  .row > div {
+    float: left;
+    height: 100px;
+    width: 100px;
+  }
+  
+  .row > div:hover {
+    cursor: pointer;
+  }
+  
+  .row {
+    clear: both;
+    width: 308px;
+    margin: auto;
+  }
+  
+  h1 {
+    color: rgb(10, 206, 245);
+    font-size: 85px;
+    margin-bottom: 30px;
+  }
+  
+  h3 {
+    color: rgb(221, 124, 107);
+    font-size: 30px;
+    background-color: #8FB3BA;
+    margin: 1em -2em;
+    padding: 15px 30px 30px 30px;
+  }
+  
+  .box {
+    font-size: 90px;
+    color: #8FB3BA;
+  }
+  
+  .top {
+    border-bottom: 4px solid #8FB3BA;
+  }
+  
+  .center {
+    border-left: 4px solid #8FB3BA;
+    border-right: 4px solid #8FB3BA;
+  }
+  
+  .bottom {
+    border-top: 4px solid #8FB3BA;
+  }
+  
+  .winner {
+    height: 25px;
+    width: auto;
+    text-decoration: underline;
+  }
+  
+  body {
+    background-color: #362A28;
+  }
