@@ -3,7 +3,7 @@ body {
   }
   
   h1 {
-    font-size: 2em;
+    font-size: 3em;
   }
   
   .info {
@@ -24,7 +24,7 @@ body {
   }
   
   button.red {
-    background: #ad0505;
+    background: #2be606;
     background: linear-gradient(to bottom, #ff1616 0%,#ad0505 100%);
   }
   
