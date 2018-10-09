@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html> 
+ 
+<head> 
+ <meta name="viewport" content="width=device-width, initial-scale=1"> 
+ 
+ <style> 
+  .clr_cls { 
+   background-color: lightblue; 
+   color: green; 
+  } 
+ </style> 
+ 
+</head> 
+ 
+<body> <center>
+ <div class="clr_cls"> 
+<B>  Wizin Winkie </b></center>
+ </div> 
+ <Br>
+<div id=container>
+  <div class="dog-head">
+    <img src="http://www.clker.com/cliparts/j/3/Z/Y/D/5/dog-head-md.png">
+  </div>
+
+  <div class="dog-body">
+
+  </div>
+</div>
+
+</body> 
+ 
+</html
