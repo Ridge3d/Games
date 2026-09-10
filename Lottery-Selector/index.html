@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Powerball historical-analysis number selector." />
+  <title>Lottery Number Selector | Powerball</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div><span class="eyebrow">THE SARCASTIC SWEDE</span><h1>Lottery Number Selector</h1></div>
+    <span class="game-pill">POWERBALL · 5/69 + 1/26</span>
+  </header>
+
+  <main>
+    <section class="hero card">
+      <div>
+        <p class="kicker">HISTORICAL ANALYSIS · CURRENT MATRIX ERA</p>
+        <h2>Pick with the past.<br><span>Expect randomness anyway.</span></h2>
+        <p class="lede">Live Powerball history is analyzed from New York Open Data. Generate statistically balanced lines using frequency, recency, and historical draw-shape averages.</p>
+      </div>
+      <div class="status-panel">
+        <span id="statusDot" class="status-dot"></span>
+        <div><strong id="statusText">Loading draw history…</strong><small id="statusMeta">Connecting to data.ny.gov</small></div>
+      </div>
+    </section>
+
+    <section class="controls card">
+      <div class="control"><label for="strategy">Strategy</label><select id="strategy"><option value="balanced">Balanced</option><option value="hot">Hot Numbers</option><option value="cold">Cold Numbers</option><option value="overdue">Overdue</option><option value="blend">Hot + Cold</option><option value="random">Pure Random</option></select></div>
+      <div class="control"><label for="count">Number of lines</label><select id="count"><option>1</option><option selected>5</option><option>10</option><option>20</option></select></div>
+      <button id="generateBtn" disabled>Generate Picks</button>
+    </section>
+
+    <section class="grid">
+      <div class="card picks-card">
+        <div class="section-head"><div><p class="kicker">YOUR LINES</p><h3>Generated Picks</h3></div><button id="copyBtn" class="ghost" disabled>Copy all</button></div>
+        <div id="picks" class="picks empty-state">Load the historical record, then generate your first set.</div>
+        <p class="disclaimer">Historical patterns do not change the odds of any valid Powerball combination. This tool analyzes the past; it does not predict the next draw.</p>
+      </div>
+
+      <aside class="card stats-card">
+        <p class="kicker">DATA SNAPSHOT</p><h3>Current-Era Statistics</h3>
+        <div class="stats"><div><span>Draws analyzed</span><strong id="drawCount">—</strong></div><div><span>Average white-ball sum</span><strong id="avgSum">—</strong></div><div><span>Most common odd/even</span><strong id="oddEven">—</strong></div><div><span>Latest draw</span><strong id="latestDraw">—</strong></div></div>
+        <h4>Hot white balls</h4><div id="hotBalls" class="mini-balls"></div>
+        <h4>Hot Powerballs</h4><div id="hotPowerballs" class="mini-balls red"></div>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <div>© 2026 API LLC. All rights reserved.</div>
+    <nav><a href="https://thesarcasticswede.com/">The Sarcastic Swede</a><a href="#">Privacy</a><a href="#">Terms</a><a href="https://thesarcasticswede.com/the-swedes-app-garage/">More Apps</a><a href="#">Contact</a></nav>
+    <div class="version">Lottery Number Selector · v1.0.0</div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
